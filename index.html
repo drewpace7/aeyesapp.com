@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A-Eyes LLC - AI Developer Tools</title>
+  <meta name="description" content="AI-powered developer tools. A-Eyes screen capture AI assistant and KBGen knowledge base generator. Tools that actually help real-world developers and technicians.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ====== NAV ====== -->
+  <nav class="nav">
+    <div class="nav-inner container">
+      <a href="index.html" class="nav-logo">
+        <img src="aeyes-icon-tray.png" alt="A-Eyes" class="logo-mark-img">
+        <span class="logo-text">A-Eyes LLC</span>
+      </a>
+      <div class="nav-links">
+        <a href="a-eyes.html">A-Eyes</a>
+        <a href="kbgen.html">KBGen</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">Developer Tools</div>
+      <img src="aeyes-icon-big.png" alt="A-Eyes" class="hero-logo" style="width: 140px; height: 140px; margin: 0 auto 28px; display: block; border-radius: 24px; box-shadow: 0 8px 40px rgba(99, 102, 241, 0.25);">
+      <h1 class="hero-title">Tools that work<br><span class="gradient-text">the way you think</span></h1>
+      <p class="hero-subtitle">Productivity software built by a developer, for developers.<br>Ship faster with AI-powered capture and intelligent knowledge bases.</p>
+      <div class="hero-actions">
+        <a href="a-eyes.html" class="btn btn-primary">Explore A-Eyes</a>
+        <a href="kbgen.html" class="btn btn-secondary">Explore KBGen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PRODUCTS ====== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-label">Products</div>
+      <h2 class="section-title">Two tools. One mission.</h2>
+      <p class="section-subtitle">Eliminate the friction between what you see, what you know, and what you build.</p>
+
+      <div class="product-grid">
+        <!-- A-Eyes Card -->
+        <a href="a-eyes.html" class="product-card">
+          <div class="product-icon product-icon-aeyes">
+            <img src="aeyes-icon-tray.png" alt="A-Eyes" style="width: 56px; height: 56px;">
+          </div>
+          <h3>A-Eyes</h3>
+          <p>The sidecar companion for Claude. Record your screen with audio narration, and let Claude analyze what you see and say. The missing bridge between your screen and your AI.</p>
+          <span class="product-cta">Learn more &rarr;</span>
+        </a>
+
+        <!-- KBGen Card -->
+        <a href="kbgen.html" class="product-card">
+          <div class="product-icon product-icon-kbgen">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="15" width="60" height="70" rx="4" fill="none" stroke="currentColor" stroke-width="4"/>
+              <line x1="32" y1="32" x2="68" y2="32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <line x1="32" y1="45" x2="60" y2="45" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <line x1="32" y1="58" x2="55" y2="58" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="68" cy="68" r="16" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="3"/>
+              <path d="M63 68l3 3 6-6" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>KBGen - Coming Soon</h3>
+          <p>Like good documentation, but hate making it? Do it quicker, easier, and better with KBGen!</p>
+          <span class="product-cta">Learn more &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT / TRUST ====== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label">About</div>
+          <h2>Built by a developer<br>who needed these tools</h2>
+          <p>I'm Drew, a developer and IT team lead. I kept needing Claude to see things happening on my screen and felt like there had to be a better way than tediously taking screenshots of each step. So I built a tool where I could record processes, narrate what's happening, and hand it off to Claude directly. It worked so well that I realized this was something other AI power users and developers would want too.</p>
+          <p>KBGen comes from years of managing an IT support team where good documentation is a must. But the reality is that the IT and tech space is only getting busier. KBGen is built to simplify your workflows, create better documentation faster, and stay compliant with standards like HIPAA and SOC2. Less time writing docs, more time solving problems.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card" style="padding: 32px 28px; text-align: center;">
+            <div style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-bottom: 16px;">Our Promise</div>
+            <div style="font-size: 22px; font-weight: 800; line-height: 1.3; letter-spacing: -0.01em;">
+              <span class="gradient-text">AI products that actually help</span><br>
+              <span style="color: var(--text);">real-world developers</span><br>
+              <span style="color: var(--text);">and technicians.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT / FOOTER ====== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="aeyes-icon-tray.png" alt="A-Eyes" class="logo-mark-img">
+          <p>Developer tools that respect your time and your workflow.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Products</h4>
+          <a href="a-eyes.html">A-Eyes</a>
+          <a href="kbgen.html">KBGen</a>
+        </div>
+        <div class="footer-links-group">
+          <h4>Support</h4>
+          <a href="mailto:drew.pace7@gmail.com">Email Support</a>
+          <a href="#">Documentation</a>
+        </div>
+        <div class="footer-links-group">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 A-Eyes LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

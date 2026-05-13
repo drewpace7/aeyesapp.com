@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A-Eyes - AI-Powered Screen Capture</title>
+  <meta name="description" content="Record your screen with audio narration and let AI analyze what you see. Screen capture meets your AI agent. For developers, QA teams, and power users.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ====== NAV ====== -->
+  <nav class="nav">
+    <div class="nav-inner container">
+      <a href="index.html" class="nav-logo">
+        <img src="aeyes-icon-tray.png" alt="A-Eyes" class="logo-mark-img">
+        <span class="logo-text">A-Eyes LLC</span>
+      </a>
+      <div class="nav-links">
+        <a href="a-eyes.html" style="color: var(--text);">A-Eyes</a>
+        <a href="kbgen.html">KBGen</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== PRODUCT HERO ====== -->
+  <section class="product-hero aeyes">
+    <div class="container">
+      <div class="product-hero-content">
+        <div class="product-hero-text">
+          <div class="section-label" style="color: var(--accent-1);">A-Eyes</div>
+          <h1>Your screen.<br>Your voice.<br><span class="gradient-text">Your AI's brain.</span></h1>
+          <p>The sidecar your AI agent was missing. Record your screen, narrate what's happening, and hand it directly to your AI for analysis. Dead simple to use and built to speed up your workflow so you spend less time explaining and more time building.</p>
+          <div class="integrations-bar" style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 20px;">
+            <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); font-weight: 600;">Integrations:</span>
+            <span style="font-size: 13px; color: var(--text-secondary); background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.25); padding: 4px 12px; border-radius: 20px;">Claude Cowork</span>
+            <span style="font-size: 13px; color: var(--text-secondary); background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.25); padding: 4px 12px; border-radius: 20px;">Claude CLI</span>
+            <span style="font-size: 13px; color: var(--text-secondary); background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.25); padding: 4px 12px; border-radius: 20px;">Codex</span>
+          </div>
+          <div class="hero-actions" style="justify-content: flex-start; align-items: center; gap: 16px; flex-wrap: wrap;">
+            <a href="https://a-eyes.lemonsqueezy.com/checkout/buy/83503f14-965a-4de4-9cf1-77c83bb2c3da" class="btn btn-primary btn-lg lemonsqueezy-button">Buy Now - $19.99</a>
+            <a href="#features" class="btn btn-secondary">See Features</a>
+            <div style="display: flex; align-items: center; gap: 10px; opacity: 0.5; margin-left: 4px;">
+              <!-- Windows logo -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+              <!-- Apple logo -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="product-hero-visual">
+          <img src="screenshots/submission-page.png" alt="A-Eyes Review Capture window showing screen recording review with delivery options">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HOW IT WORKS ====== -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-label" style="color: var(--accent-1); text-align: center;">How it works</div>
+      <h2 class="section-title" style="text-align: center;">Three steps. Zero friction.</h2>
+
+      <div class="toolbar-showcase" style="max-width: 620px; margin: 0 auto 48px;">
+        <img src="screenshots/app-bar.png" alt="A-Eyes toolbar with recording controls" style="width: 100%; border-radius: 10px; border: 1px solid var(--border); box-shadow: 0 8px 32px rgba(0,0,0,0.4);">
+        <p style="text-align: center; font-size: 13px; color: var(--text-muted); margin-top: 12px;">The A-Eyes toolbar — always ready, never in the way</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number indigo">1</div>
+          <h3>Record</h3>
+          <p>Hit a hotkey or click record. A-Eyes captures your screen intelligently and you can narrate with your mic as you go to give your AI agent full context.</p>
+        </div>
+        <div class="step">
+          <div class="step-number indigo">2</div>
+          <h3>Review</h3>
+          <p>Name your capture, add quick annotations if you want, and pick where it goes. Desktop, CLI, or queued for later.</p>
+        </div>
+        <div class="step">
+          <div class="step-number indigo">3</div>
+          <h3>Get Answers</h3>
+          <p>A-Eyes delivers your capture directly to your AI agent. Frames, transcript, and notes all land in one shot. No copy-pasting, no file juggling, no extra prompting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SHOWCASE ====== -->
+  <section class="showcase" style="padding: 80px 0 100px; border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-label" style="color: var(--accent-1); text-align: center;">See it in action</div>
+      <h2 class="section-title" style="text-align: center;">Built to feel familiar<br>from the first click</h2>
+      <p class="section-subtitle" style="text-align: center; margin: 0 auto 56px;">Clean, intuitive UI that gets out of your way and lets you focus on the work.</p>
+
+      <div class="showcase-grid">
+        <div class="showcase-item">
+          <div class="showcase-img-wrap">
+            <img src="screenshots/install-wizard.png" alt="A-Eyes setup wizard">
+          </div>
+          <h3>Quick Setup</h3>
+          <p>Pick your data folder, choose a delivery method, and you're recording in under a minute.</p>
+        </div>
+        <div class="showcase-item">
+          <div class="showcase-img-wrap">
+            <img src="screenshots/history.png" alt="A-Eyes capture history">
+          </div>
+          <h3>Capture History</h3>
+          <p>Every capture tracked with status, duration, and frame count. Search, filter, and manage your entire queue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FEATURES ====== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label" style="color: var(--accent-1);">Features</div>
+      <h2 class="section-title">Everything you need,<br>nothing you don't</h2>
+      <p class="section-subtitle">Built for developers and power users who want AI that can actually see their work.</p>
+
+      <div class="features-grid">
+        <div class="feature-card" style="border: 1px solid var(--accent-1); position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; right: 0; background: var(--accent-1); color: #fff; font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 0 0 0 8px; text-transform: uppercase; letter-spacing: 0.5px;">Top Feature</div>
+          <div class="feature-icon indigo">&#9889;</div>
+          <h3>Direct CLI Integration</h3>
+          <p>Feed captures directly into your existing Claude Code sessions. No prompting required. A-Eyes drops your screen recording, transcript, and notes right into the CLI so your AI picks it up instantly and keeps working.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon indigo">&#127909;</div>
+          <h3>Intelligent Screen Recording</h3>
+          <p>A-Eyes captures your screen efficiently, only grabbing what matters when something changes. Full coverage of your workflow without wasting space or slowing you down.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon indigo">&#127908;</div>
+          <h3>Voice Narration + Transcription</h3>
+          <p>Talk through what you're doing while you record. A-Eyes transcribes your audio automatically and syncs it with your screen captures so your AI gets the full picture.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon indigo">&#128268;</div>
+          <h3>Automatic Prompt Bridge</h3>
+          <p>A-Eyes detects your open AI agent and delivers your capture automatically. No switching windows, no pasting, no typing. Just record and go.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon indigo">&#128247;</div>
+          <h3>Quick Screenshot Tool</h3>
+          <p>Need a one-off? Snip a region of your screen, annotate it, and fire it over to your AI for a fast answer. Perfect for quick questions mid-workflow.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon indigo">&#128203;</div>
+          <h3>Capture Inbox</h3>
+          <p>All your captures are tracked and organized with status updates. Your AI agent can see your full queue at a glance and work through them in order.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon indigo">&#128736;</div>
+          <h3>Multiple Delivery Modes</h3>
+          <p>Send captures to Cowork or Codex, pipe them into the CLI, or queue them for batch review later. However you work with your AI, A-Eyes fits right in.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon indigo">&#128274;</div>
+          <h3>Privacy First</h3>
+          <p>Everything stays on your machine. Captures are stored locally, audio is transcribed locally, and nothing is sent to any external server. Your AI only sees what you explicitly choose to send.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon indigo">&#128187;</div>
+          <h3>Works Where You Do</h3>
+          <p>Runs natively on both Windows and Mac. Lives in your system tray, launches with a global hotkey, and stays out of your way until you need it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PRICING ====== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-label" style="color: var(--accent-1); text-align: center;">Pricing</div>
+      <h2 class="section-title" style="text-align: center;">One price. Everything included.</h2>
+      <p class="section-subtitle" style="text-align: center; margin: 0 auto 48px;">No subscriptions, no feature gates, no nonsense. Pay once, use it forever.</p>
+
+      <div class="pricing-card indigo">
+        <div class="pricing-label">A-Eyes Desktop</div>
+        <div class="price gradient-text">$19.99</div>
+        <div class="price-note">One-time payment &middot; Lifetime updates</div>
+
+        <ul class="pricing-features">
+          <li><span class="check indigo">&#10003;</span> Intelligent screen recording</li>
+          <li><span class="check indigo">&#10003;</span> Voice narration + automatic transcription</li>
+          <li><span class="check indigo">&#10003;</span> Quick screenshot snipping tool</li>
+          <li><span class="check indigo">&#10003;</span> Claude CLI + Codex integration</li>
+          <li><span class="check indigo">&#10003;</span> Claude Cowork + Codex Desktop delivery</li>
+          <li><span class="check indigo">&#10003;</span> Automatic prompt bridge</li>
+          <li><span class="check indigo">&#10003;</span> Capture inbox with status tracking</li>
+          <li><span class="check indigo">&#10003;</span> Windows + Mac</li>
+          <li><span class="check indigo">&#10003;</span> Activate on up to 2 machines</li>
+          <li><span class="check indigo">&#10003;</span> All future updates included</li>
+        </ul>
+
+        <a href="https://a-eyes.lemonsqueezy.com/checkout/buy/83503f14-965a-4de4-9cf1-77c83bb2c3da" class="btn btn-primary btn-lg lemonsqueezy-button" id="buy-btn" style="width: 100%; justify-content: center;">
+          Buy A-Eyes
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PRIVACY ====== -->
+  <section class="how-it-works" style="border-top: 1px solid var(--border);">
+    <div class="container" style="text-align: center;">
+      <div class="section-label" style="color: var(--accent-1);">Your data stays yours</div>
+      <h2 class="section-title">100% local. Zero cloud uploads.</h2>
+      <p class="section-subtitle" style="margin: 0 auto 48px; text-align: center;">A-Eyes never sends your screenshots, recordings, or audio to any external server. Everything is captured, stored, and transcribed locally on your machine. Your AI agent only sees what you explicitly choose to send, through the same tools you already use and trust. There is no A-Eyes server, no telemetry, no analytics. Your screen is your business.</p>
+    </div>
+  </section>
+
+  <!-- ====== CTA ====== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to give your AI <span class="gradient-text">eyes and ears</span>?</h2>
+      <p>Stop describing what you see. Start showing it.</p>
+      <a href="https://a-eyes.lemonsqueezy.com/checkout/buy/83503f14-965a-4de4-9cf1-77c83bb2c3da" class="btn btn-primary btn-lg lemonsqueezy-button">Get A-Eyes</a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="aeyes-icon-tray.png" alt="A-Eyes" class="logo-mark-img">
+          <p>Developer tools that respect your time and your workflow.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Products</h4>
+          <a href="a-eyes.html">A-Eyes</a>
+          <a href="kbgen.html">KBGen</a>
+        </div>
+        <div class="footer-links-group">
+          <h4>Support</h4>
+          <a href="mailto:drew.pace7@gmail.com">Email Support</a>
+          <a href="#">Documentation</a>
+        </div>
+        <div class="footer-links-group">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 A-Eyes LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LemonSqueezy Checkout Overlay -->
+  <!-- Loads LS checkout as a popup overlay instead of redirecting -->
+  <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+  <script>
+    // Once you have your LemonSqueezy checkout URL, update the buy button:
+    // 1. Go to app.lemonsqueezy.com → Products → A-Eyes → Share
+    // 2. Copy the checkout URL (looks like: https://yourstore.lemonsqueezy.com/buy/xxxx)
+    // 3. Set it as the href on the #buy-btn element
+    // 4. Add class "lemonsqueezy-button" to the #buy-btn for popup checkout
+    //
+    // Example:
+    // <a href="https://yourstore.lemonsqueezy.com/buy/xxxx"
+    //    class="btn btn-primary btn-lg lemonsqueezy-button">Buy A-Eyes</a>
+  </script>
+</body>
+</html>

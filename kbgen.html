@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KBGen - Screen-to-KB Article Generator (Coming Soon)</title>
+  <meta name="description" content="Record your screen, pick a technicality tier, and get a polished knowledge base article written for you. From step-by-step end-user guides to concise technical runbooks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ====== NAV ====== -->
+  <nav class="nav">
+    <div class="nav-inner container">
+      <a href="index.html" class="nav-logo">
+        <img src="aeyes-icon-tray.png" alt="A-Eyes" class="logo-mark-img">
+        <span class="logo-text">A-Eyes LLC</span>
+      </a>
+      <div class="nav-links">
+        <a href="a-eyes.html">A-Eyes</a>
+        <a href="kbgen.html" style="color: var(--text);">KBGen</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== PRODUCT HERO ====== -->
+  <section class="product-hero kbgen">
+    <div class="container">
+      <div class="product-hero-content">
+        <div class="product-hero-text">
+          <div class="section-label" style="color: var(--accent-2);">KBGen - Coming Soon</div>
+          <h1>Record it once.<br>Document it<br><span style="background: linear-gradient(135deg, #22c55e, #16a34a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">perfectly.</span></h1>
+          <p>Stop writing KB articles by hand. Record your screen while you walk through a workflow, pick who the article is for, and KBGen writes a polished knowledge base article at exactly the right level of detail for your audience.</p>
+          <div class="hero-actions" style="justify-content: flex-start;">
+            <a href="#pricing" class="btn btn-secondary btn-lg" style="pointer-events: none; opacity: 0.6;">Coming Soon</a>
+            <a href="#features" class="btn btn-secondary">See Features</a>
+          </div>
+        </div>
+        <div class="product-hero-visual">
+          <div class="placeholder-text">
+            <svg width="80" height="80" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="opacity:0.3; margin: 0 auto 12px;">
+              <rect x="20" y="15" width="60" height="70" rx="4" fill="none" stroke="currentColor" stroke-width="4"/>
+              <line x1="32" y1="32" x2="68" y2="32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <line x1="32" y1="45" x2="60" y2="45" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <line x1="32" y1="58" x2="55" y2="58" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <p>App screenshot goes here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HOW IT WORKS ====== -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-label" style="color: var(--accent-2); text-align: center;">How it works</div>
+      <h2 class="section-title" style="text-align: center;">Show it. Say it. Ship it.</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number green">1</div>
+          <h3>Record</h3>
+          <p>Walk through the workflow on your screen while KBGen captures every step. Narrate as you go to add context, or let the screenshots speak for themselves.</p>
+        </div>
+        <div class="step">
+          <div class="step-number green">2</div>
+          <h3>Pick Your Tier</h3>
+          <p>Choose who this article is for. Tier 0 for basic end users with big annotated screenshots and simple language. Tier 3 for your technical team with concise instructions and only the screenshots that matter.</p>
+        </div>
+        <div class="step">
+          <div class="step-number green">3</div>
+          <h3>Get Your Article</h3>
+          <p>KBGen generates a complete, formatted KB article with numbered steps, annotated screenshots, and the right level of detail for your audience. Ready to publish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TIER EXPLAINER ====== -->
+  <section class="features" id="tiers" style="border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-label" style="color: var(--accent-2);">Technicality Tiers</div>
+      <h2 class="section-title">One recording.<br>Every audience.</h2>
+      <p class="section-subtitle">The same workflow becomes a different article depending on who needs to read it. KBGen adjusts the language, detail level, and screenshot density to match your audience.</p>
+
+      <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+        <div class="feature-card" style="border-top: 3px solid #22c55e;">
+          <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #22c55e; font-weight: 700; margin-bottom: 8px;">Tier 0</div>
+          <h3>End Users</h3>
+          <p>Every click gets a screenshot. Big red arrows, boxes, and circles highlight exactly where to look. Plain language, zero jargon, zero assumptions. Written so anyone can follow along.</p>
+        </div>
+        <div class="feature-card" style="border-top: 3px solid #3b82f6;">
+          <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #3b82f6; font-weight: 700; margin-bottom: 8px;">Tier 1</div>
+          <h3>Help Desk / Power Users</h3>
+          <p>Assumes basic familiarity with the application. Fewer screenshots, focused on the steps that aren't obvious. Includes context without over-explaining every click.</p>
+        </div>
+        <div class="feature-card" style="border-top: 3px solid #a855f7;">
+          <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #a855f7; font-weight: 700; margin-bottom: 8px;">Tier 2</div>
+          <h3>Desktop Services</h3>
+          <p>Written for teams that configure and maintain applications. More technical language, screenshots only where they add real value, and enough detail to execute without hand-holding.</p>
+        </div>
+        <div class="feature-card" style="border-top: 3px solid #8b5cf6;">
+          <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #8b5cf6; font-weight: 700; margin-bottom: 8px;">Tier 3</div>
+          <h3>Subject Matter Experts</h3>
+          <p>Concise, direct instructions for people who know the system. Proper technical terminology, minimal screenshots, and no unnecessary explanation. Just what they need to get it done.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FEATURES ====== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label" style="color: var(--accent-2);">Features</div>
+      <h2 class="section-title">Everything you need,<br>nothing you don't</h2>
+      <p class="section-subtitle">Built for teams that need documentation but don't have time to write it.</p>
+
+      <div class="features-grid">
+        <div class="feature-card" style="border: 1px solid var(--accent-2); position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; right: 0; background: var(--accent-2); color: #fff; font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 0 0 0 8px; text-transform: uppercase; letter-spacing: 0.5px;">Top Feature</div>
+          <div class="feature-icon green">&#127919;</div>
+          <h3>Tiered Output</h3>
+          <p>Select the technicality level before generating. The same recording produces a hand-holding walkthrough or a concise technical runbook depending on who needs to read it.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">&#127909;</div>
+          <h3>Screen Recording</h3>
+          <p>Record your screen as you walk through the workflow. KBGen captures each step as a frame, building the visual foundation for your article automatically.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">&#127908;</div>
+          <h3>Voice Narration</h3>
+          <p>Talk through what you're doing while you record. Your narration becomes the written instructions. KBGen translates your explanation into clean, structured steps.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">&#128248;</div>
+          <h3>Smart Annotations</h3>
+          <p>Lower tier articles get automatic annotations like arrows, circles, and highlights pointing to exactly where the user should click. Higher tiers keep it clean and minimal.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">&#128196;</div>
+          <h3>Publish-Ready Output</h3>
+          <p>Get back a formatted article with numbered steps, embedded screenshots, and a clear title. Copy it into Confluence, SharePoint, Notion, or wherever your team keeps docs.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">&#128274;</div>
+          <h3>Stored Locally</h3>
+          <p>Your screen recordings and generated articles are saved on your machine. Article generation runs through an AI API you configure, but your captures and finished docs never leave your computer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== USE CASES ====== -->
+  <section class="how-it-works" style="border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-label" style="color: var(--accent-2); text-align: center;">Use cases</div>
+      <h2 class="section-title" style="text-align: center;">Made for people who would rather<br>show than write</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number green" style="font-size: 18px;">&#128187;</div>
+          <h3>IT and Helpdesk</h3>
+          <p>Record the fix once. Generate a Tier 0 guide for end users and a Tier 3 article for your SMEs from the same recording.</p>
+        </div>
+        <div class="step">
+          <div class="step-number green" style="font-size: 18px;">&#128736;</div>
+          <h3>App Configuration</h3>
+          <p>Walk through a custom application setup, and get a detailed configuration guide your support or implementation team can follow precisely.</p>
+        </div>
+        <div class="step">
+          <div class="step-number green" style="font-size: 18px;">&#128218;</div>
+          <h3>Onboarding and Training</h3>
+          <p>Show a new hire how a process works one time. KBGen creates the training doc they can reference on their own going forward.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PRICING ====== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-label" style="color: var(--accent-2); text-align: center;">Pricing</div>
+      <h2 class="section-title" style="text-align: center;">Simple pricing. Full access.</h2>
+      <p class="section-subtitle" style="text-align: center; margin: 0 auto 48px;">One purchase. All tiers. Every update.</p>
+
+      <div class="pricing-card green">
+        <div class="pricing-label">KBGen</div>
+        <div class="price" style="background: linear-gradient(135deg, #22c55e, #16a34a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TBD</div>
+        <div class="price-note">One-time payment &middot; Lifetime updates</div>
+
+        <ul class="pricing-features">
+          <li><span class="check green">&#10003;</span> Screen recording with narration</li>
+          <li><span class="check green">&#10003;</span> All technicality tiers (0 through 3)</li>
+          <li><span class="check green">&#10003;</span> Automatic screenshot annotations</li>
+          <li><span class="check green">&#10003;</span> Publish-ready formatted articles</li>
+          <li><span class="check green">&#10003;</span> Unlimited article generation</li>
+          <li><span class="check green">&#10003;</span> Windows + Mac</li>
+          <li><span class="check green">&#10003;</span> Activate on up to 2 machines</li>
+          <li><span class="check green">&#10003;</span> All future updates included</li>
+        </ul>
+
+        <!-- Replace href with your LemonSqueezy checkout URL -->
+        <a href="#" class="btn btn-secondary btn-lg" id="buy-btn" style="width: 100%; justify-content: center; pointer-events: none; opacity: 0.6;">
+          Coming Soon
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PRIVACY ====== -->
+  <section class="how-it-works" style="border-top: 1px solid var(--border);">
+    <div class="container" style="text-align: center;">
+      <div class="section-label" style="color: var(--accent-2);">Your data stays yours</div>
+      <h2 class="section-title">Stored locally. Generated via your AI.</h2>
+      <p class="section-subtitle" style="margin: 0 auto 48px; text-align: center;">KBGen stores all recordings, narration, and finished articles on your machine. Article generation runs through an AI API you connect, the same one you already use and trust. There is no KBGen server, no telemetry, no analytics. Your internal workflows stay internal.</p>
+    </div>
+  </section>
+
+  <!-- ====== CTA ====== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Stop writing docs from scratch.<br>Start <span style="background: linear-gradient(135deg, #22c55e, #16a34a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">recording</span> them.</h2>
+      <p>Show it once. Get an article for every audience.</p>
+      <a href="#features" class="btn btn-secondary btn-lg">See What's Coming</a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="aeyes-icon-tray.png" alt="A-Eyes" class="logo-mark-img">
+          <p>Developer tools that respect your time and your workflow.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Products</h4>
+          <a href="a-eyes.html">A-Eyes</a>
+          <a href="kbgen.html">KBGen</a>
+        </div>
+        <div class="footer-links-group">
+          <h4>Support</h4>
+          <a href="mailto:drew.pace7@gmail.com">Email Support</a>
+          <a href="#">Documentation</a>
+        </div>
+        <div class="footer-links-group">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 A-Eyes LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LemonSqueezy Checkout Overlay -->
+  <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+  <script>
+    // Same setup as A-Eyes - get your KBGen checkout URL from LemonSqueezy
+    // and set it as the href on #buy-btn with class "lemonsqueezy-button"
+  </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - A-Eyes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .legal-content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+    .legal-content h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    .legal-content .last-updated {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-bottom: 48px;
+    }
+    .legal-content h2 {
+      font-size: 1.25rem;
+      margin-top: 40px;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    .legal-content p {
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .legal-content strong {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== NAV ====== -->
+  <nav class="nav">
+    <div class="nav-inner container">
+      <a href="index.html" class="nav-logo">
+        <img src="aeyes-icon-tray.png" alt="A-Eyes" class="logo-mark-img">
+        <span class="logo-text">A-Eyes LLC</span>
+      </a>
+      <div class="nav-links">
+        <a href="a-eyes.html">A-Eyes</a>
+        <a href="kbgen.html">KBGen</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="legal-content">
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last updated: April 6, 2026</p>
+
+    <h2>Overview</h2>
+    <p>A-Eyes LLC ("we", "our", "us") built A-Eyes as a desktop application. This Privacy Policy explains what data A-Eyes collects, how it is used, and your rights regarding that data. The short version: A-Eyes is a local-first application. Your screen recordings, screenshots, audio, and transcriptions never leave your machine unless you explicitly choose to send them to Claude through your own API or desktop app.</p>
+
+    <h2>Data That Stays On Your Machine</h2>
+    <p>A-Eyes captures screenshots, screen recordings, and audio narration. All of this data is stored locally in your documents folder. Audio transcription is performed locally on your device. None of this data is transmitted to any server operated by us. We do not have access to your captures, recordings, audio, transcriptions, or any content you create with A-Eyes.</p>
+
+    <h2>Data Sent to Third Parties By Your Choice</h2>
+    <p>When you choose to submit a capture to Claude (via Claude Desktop, Claude CLI, or Cowork mode), that data is sent to Anthropic through the Claude interface you are already using. This is initiated by you and governed by Anthropic's own privacy policy and terms of service. A-Eyes does not independently transmit data to Anthropic or any other AI provider.</p>
+
+    <h2>License Validation</h2>
+    <p>A-Eyes uses LemonSqueezy for license management. When you activate or validate your license, the following data is sent to LemonSqueezy's servers: your license key, and a machine identifier (a hash derived from your computer's hostname and basic system attributes). This is used solely to verify your license and enforce activation limits. We do not send your name, email, IP address, or any content from your captures to LemonSqueezy. Your purchase and billing information is handled entirely by LemonSqueezy and is subject to their privacy policy.</p>
+
+    <h2>Machine Identifier</h2>
+    <p>To support license activation on up to two machines, A-Eyes generates a short identifier based on your computer's hostname and system configuration. This identifier is a one-way hash and cannot be reversed to reveal your personal information. It is sent only to LemonSqueezy during license activation and periodic revalidation.</p>
+
+    <h2>No Telemetry, No Analytics</h2>
+    <p>A-Eyes does not include any analytics, telemetry, crash reporting, or tracking of any kind. We do not know how often you use the app, what you capture, or how you use it. There are no cookies, no tracking pixels, and no third-party analytics scripts in the application.</p>
+
+    <h2>Local Configuration</h2>
+    <p>A-Eyes stores your preferences (hotkey settings, output directory, default submission mode, etc.) in a local configuration file on your computer. This data is never transmitted anywhere.</p>
+
+    <h2>Data Retention</h2>
+    <p>All captures and recordings are stored on your machine and managed by you. If you configure a retention period in the app settings, A-Eyes will automatically delete older captures from your local storage after that period. We have no access to and no control over your locally stored data.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>A-Eyes is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date. Continued use of A-Eyes after changes constitutes acceptance of the revised policy.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this Privacy Policy, you can reach us at <a href="mailto:drew.pace7@gmail.com" style="color: var(--accent-1);">drew.pace7@gmail.com</a>.</p>
+  </div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="aeyes-icon-tray.png" alt="A-Eyes" class="logo-mark-img">
+          <p>Developer tools that respect your time and your workflow.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Products</h4>
+          <a href="a-eyes.html">A-Eyes</a>
+          <a href="kbgen.html">KBGen</a>
+        </div>
+        <div class="footer-links-group">
+          <h4>Support</h4>
+          <a href="mailto:drew.pace7@gmail.com">Email Support</a>
+          <a href="#">Documentation</a>
+        </div>
+        <div class="footer-links-group">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 A-Eyes LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
