@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A-Eyes - AI-Powered Screen Capture</title>
-  <meta name="description" content="Record your screen with audio narration and let AI analyze what you see. Screen capture meets your AI agent. For developers, QA teams, and power users.">
+  <title>A-Eyes - Screen Recordings for AI Coding Agents</title>
+  <meta name="description" content="Record your screen, narrate bugs or workflows, and send visual context to Claude, Codex, and AI coding assistants. Built for developers and AI power users.">
+  <meta property="og:title" content="A-Eyes - Screen Recordings for AI Coding Agents">
+  <meta property="og:description" content="Record your screen, narrate bugs or workflows, and send visual context to Claude, Codex, and AI coding assistants.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aeyesapp.com/a-eyes.html">
+  <meta property="og:image" content="https://aeyesapp.com/aeyes-icon-big.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A-Eyes - Screen Recordings for AI Coding Agents">
+  <meta name="twitter:description" content="Record your screen, narrate bugs or workflows, and send visual context to Claude, Codex, and AI coding assistants.">
+  <link rel="canonical" href="https://aeyesapp.com/a-eyes.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -218,6 +227,45 @@
     </div>
   </section>
 
+  <!-- ====== FAQ ====== -->
+  <section class="how-it-works" id="faq" style="border-top: 1px solid var(--border);">
+    <div class="container" style="max-width: 780px;">
+      <div class="section-label" style="color: var(--accent-1); text-align: center;">FAQ</div>
+      <h2 class="section-title" style="text-align: center;">Frequently Asked Questions</h2>
+
+      <div style="margin-top: 48px;">
+        <div style="border-bottom: 1px solid var(--border); padding: 24px 0;">
+          <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 10px; color: var(--text);">What is A-Eyes?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7;">A-Eyes is a desktop screen capture tool built for developers and AI power users. It lets you record your screen, narrate what you're doing with your mic, and send the capture directly to your AI coding assistant for analysis. Think of it as the missing bridge between what's on your screen and what your AI can see.</p>
+        </div>
+        <div style="border-bottom: 1px solid var(--border); padding: 24px 0;">
+          <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 10px; color: var(--text);">Does A-Eyes work with Claude Code?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7;">Yes. A-Eyes integrates directly with Claude Code's CLI. It builds an optimized prompt with your screen capture, transcript, and notes, then launches it in a terminal window. Your capture lands right in an active Claude Code session.</p>
+        </div>
+        <div style="border-bottom: 1px solid var(--border); padding: 24px 0;">
+          <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 10px; color: var(--text);">Does A-Eyes work with Codex Desktop?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7;">Yes. A-Eyes can detect an open Codex Desktop window and paste your capture prompt directly into it. If Codex isn't running, the prompt is copied to your clipboard so you can paste it manually.</p>
+        </div>
+        <div style="border-bottom: 1px solid var(--border); padding: 24px 0;">
+          <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 10px; color: var(--text);">Can I use A-Eyes to record bugs for an AI coding assistant?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7;">Absolutely. That's one of the primary use cases. Hit record, reproduce the bug, narrate what you're seeing, and A-Eyes packages the whole thing and delivers it to your AI. Your assistant gets the full visual context instead of a text description.</p>
+        </div>
+        <div style="border-bottom: 1px solid var(--border); padding: 24px 0;">
+          <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 10px; color: var(--text);">Are my screen recordings sent to a server?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7;">No. All captures are stored locally on your machine. There is no A-Eyes server, no telemetry, and no analytics. When you submit a capture, it goes directly to the AI agent you chose (Claude, Codex, etc.) through their own tools that you already use and trust. A-Eyes never sees your data.</p>
+        </div>
+        <div style="border-bottom: 1px solid var(--border); padding: 24px 0;">
+          <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 10px; color: var(--text);">Does transcription run locally?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7;">Yes. A-Eyes uses a local Whisper model bundled with the app to transcribe your voice narration. Your audio never leaves your machine. The transcription is timestamped and synced with your screen frames so the AI can match what you said to what was happening on screen.</p>
+        </div>
+        <div style="padding: 24px 0;">
+          <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 10px; color: var(--text);">Does A-Eyes work on Windows and Mac?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7;">Yes. A-Eyes runs natively on both Windows and macOS. It installs as a lightweight desktop app, lives in your system tray or menu bar, and launches with a global hotkey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ====== CTA ====== -->
   <section class="cta-banner">
     <div class="container">
@@ -256,6 +304,103 @@
       </div>
     </div>
   </footer>
+
+  <!-- ====== STRUCTURED DATA (JSON-LD) ====== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "A-Eyes LLC",
+        "url": "https://aeyesapp.com",
+        "logo": "https://aeyesapp.com/aeyes-icon-big.png",
+        "sameAs": []
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "A-Eyes",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Windows, macOS",
+        "description": "Desktop screen capture tool that sends screenshots and recordings directly to AI coding assistants for instant analysis.",
+        "url": "https://aeyesapp.com/a-eyes.html",
+        "image": "https://aeyesapp.com/aeyes-icon-big.png",
+        "author": {
+          "@type": "Organization",
+          "name": "A-Eyes LLC"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "19.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://a-eyes.lemonsqueezy.com/checkout/buy/83503f14-965a-4de4-9cf1-77c83bb2c3da"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is A-Eyes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A-Eyes is a desktop screen capture tool built for developers and AI power users. It lets you record your screen, narrate what you're doing with your mic, and send the capture directly to your AI coding assistant for analysis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does A-Eyes work with Claude Code?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A-Eyes integrates directly with Claude Code's CLI. It builds an optimized prompt with your screen capture, transcript, and notes, then launches it in a terminal window."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does A-Eyes work with Codex Desktop?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A-Eyes can detect an open Codex Desktop window and paste your capture prompt directly into it. If Codex isn't running, the prompt is copied to your clipboard."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use A-Eyes to record bugs for an AI coding assistant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Hit record, reproduce the bug, narrate what you're seeing, and A-Eyes packages the whole thing and delivers it to your AI. Your assistant gets the full visual context instead of a text description."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are my screen recordings sent to a server?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. All captures are stored locally on your machine. There is no A-Eyes server, no telemetry, and no analytics. When you submit a capture, it goes directly to the AI agent you chose through their own tools."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does transcription run locally?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A-Eyes uses a local Whisper model bundled with the app to transcribe your voice narration. Your audio never leaves your machine."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does A-Eyes work on Windows and Mac?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A-Eyes runs natively on both Windows and macOS. It installs as a lightweight desktop app, lives in your system tray or menu bar, and launches with a global hotkey."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <!-- LemonSqueezy Checkout Overlay -->
   <!-- Loads LS checkout as a popup overlay instead of redirecting -->

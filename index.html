@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A-Eyes LLC - AI Developer Tools</title>
-  <meta name="description" content="AI-powered developer tools. A-Eyes screen capture AI assistant and KBGen knowledge base generator. Tools that actually help real-world developers and technicians.">
+  <title>A-Eyes LLC - AI Developer Tools | Screen Capture for AI Agents</title>
+  <meta name="description" content="AI-powered developer tools by A-Eyes LLC. A-Eyes sends screen recordings to your AI coding assistant. KBGen turns recordings into knowledge base articles. Built for developers and IT teams.">
+  <meta property="og:title" content="A-Eyes LLC - AI Developer Tools">
+  <meta property="og:description" content="Screen capture for AI coding agents. Knowledge base generation from screen recordings. Tools that actually help real-world developers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aeyesapp.com">
+  <meta property="og:image" content="https://aeyesapp.com/aeyes-icon-big.png">
+  <link rel="canonical" href="https://aeyesapp.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -33,8 +39,27 @@
   <!-- ====== HERO ====== -->
   <section class="hero">
     <div class="container">
-      <div class="hero-badge">Developer Tools</div>
-      <img src="aeyes-icon-big.png" alt="A-Eyes" class="hero-logo" style="width: 140px; height: 140px; margin: 0 auto 28px; display: block; border-radius: 24px; box-shadow: 0 8px 40px rgba(99, 102, 241, 0.25);">
+      <div class="eye-container" id="eyeContainer" style="position: relative; width: 200px; height: 200px; margin: 0 auto 32px; cursor: default;">
+        <img src="aeyes-icon-big.png" alt="A-Eyes" class="hero-logo" style="width: 200px; height: 200px; display: block; border-radius: 32px; box-shadow: 0 12px 48px rgba(99, 102, 241, 0.3);">
+        <!-- Tracking pupil overlay — sits on top of the static icon's pupil -->
+        <div id="eyePupil" style="
+          position: absolute;
+          top: 50%; left: 50%;
+          width: 52px; height: 52px;
+          margin-left: -26px; margin-top: -26px;
+          border-radius: 50%;
+          background: radial-gradient(circle at 40% 38%, #c084fc 0%, #a855f7 30%, #7c3aed 60%, #1e1040 85%);
+          box-shadow: inset 0 0 8px rgba(0,0,0,0.4), 0 0 12px rgba(139, 92, 246, 0.3);
+          pointer-events: none;
+          transition: transform 0.08s ease-out;
+          z-index: 2;
+        ">
+          <!-- Dark pupil center -->
+          <div style="position: absolute; top: 50%; left: 50%; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 50%; background: radial-gradient(circle, #0a0a1a 60%, #1e1040 100%);"></div>
+          <!-- White highlight -->
+          <div style="position: absolute; top: 28%; left: 32%; width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.9);"></div>
+        </div>
+      </div>
       <h1 class="hero-title">Tools that work<br><span class="gradient-text">the way you think</span></h1>
       <p class="hero-subtitle">Productivity software built by a developer, for developers.<br>Ship faster with AI-powered capture and intelligent knowledge bases.</p>
       <div class="hero-actions">
@@ -43,6 +68,40 @@
       </div>
     </div>
   </section>
+
+  <!-- Eye tracking script -->
+  <script>
+  (function() {
+    const pupil = document.getElementById('eyePupil');
+    const container = document.getElementById('eyeContainer');
+    if (!pupil || !container) return;
+
+    const MAX_OFFSET = 12; // Max pixels the pupil can move from center
+
+    document.addEventListener('mousemove', function(e) {
+      const rect = container.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+
+      const dx = e.clientX - centerX;
+      const dy = e.clientY - centerY;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+
+      // Normalize and clamp to MAX_OFFSET
+      const clampedDist = Math.min(dist, 300); // sensitivity range
+      const ratio = clampedDist / 300;
+      const offsetX = (dx / (dist || 1)) * MAX_OFFSET * ratio;
+      const offsetY = (dy / (dist || 1)) * MAX_OFFSET * ratio;
+
+      pupil.style.transform = 'translate(' + offsetX + 'px, ' + offsetY + 'px)';
+    });
+
+    // Reset on mouse leave
+    document.addEventListener('mouseleave', function() {
+      pupil.style.transform = 'translate(0, 0)';
+    });
+  })();
+  </script>
 
   <!-- ====== PRODUCTS ====== -->
   <section class="products" id="products">

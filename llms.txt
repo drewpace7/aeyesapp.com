@@ -1,0 +1,19 @@
+# A-Eyes LLC
+> AI-powered developer tools. Screen capture for AI coding agents and intelligent knowledge base generation.
+
+## A-Eyes Desktop
+A-Eyes is a desktop screen capture tool that sends screenshots and recordings directly to AI coding assistants for instant analysis. Users record their screen, narrate with their mic, and A-Eyes delivers the capture to Claude Code, Codex Desktop, or Claude Cowork automatically. Captures are stored locally. Transcription runs locally via Whisper. Available for Windows and macOS. One-time purchase, $19.99.
+
+- Product page: https://aeyesapp.com/a-eyes.html
+- Purchase: https://a-eyes.lemonsqueezy.com/checkout/buy/83503f14-965a-4de4-9cf1-77c83bb2c3da
+
+## KBGen (Coming Soon)
+KBGen turns screen recordings into publish-ready knowledge base articles. Record a process once, choose a technicality tier (end user, help desk, desktop services, or SME), and get a structured article. Built for IT teams, trainers, and anyone who writes technical documentation.
+
+- Product page: https://aeyesapp.com/kbgen.html
+
+## Company
+- Website: https://aeyesapp.com
+- Privacy Policy: https://aeyesapp.com/privacy.html
+- Terms of Service: https://aeyesapp.com/terms.html
+- Contact: drew.pace7@gmail.com
