@@ -16,4 +16,4 @@ KBGen turns screen recordings into publish-ready knowledge base articles. Record
 - Website: https://aeyesapp.com
 - Privacy Policy: https://aeyesapp.com/privacy.html
 - Terms of Service: https://aeyesapp.com/terms.html
-- Contact: drew.pace7@gmail.com
+- Contact: drew@aeyesapp.com
